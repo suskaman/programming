@@ -4,12 +4,10 @@
 int main()
 {
 	int num;
-	char str[102] = "";
-
+	char str[101] = "";
 	scanf("%d\n", &num);
-	fgets(str, 102, stdin);
-
+	scanf("%[^\n]s", str);
 	printf("%d\n", num);
-	puts(str);
+	printf("%s", str);
 	return 0;
 }
