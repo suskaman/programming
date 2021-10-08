@@ -1,15 +1,16 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+#include <locale.h>
 int main()
 {
+	setlocale(LC_ALL, "Rus");
 	int numa, numb;
 	scanf("%d", &numa);
-	printf("%d\n", numa, " - вывод в 10 сс"); 
-	printf("%x\n", numa, " - вывод в 16 сс"); 
-	printf("%o\n", numa << 1, " - вывод в 16 сс и сдвиг влево на 1"); 
-	printf("%x\n", ~numa, " - вывод в 16 сс с побитовым отрицанием"); 
+	printf("%x - вывод в 16 сс\n", numa);
+	printf("%o - вывод в 8 сс\n", numa);
+	printf("%o - вывод в 8 сс и сдвиг вправо на 1\n", numa >> 1);
+	printf("%o - вывод в 8 сс с побитовым отрицанием\n", ~numa);
 	scanf("%d", &numb);
-	printf("%o\n", numa ^ numb, " - операция исключающее или"); 
+	printf("%o - операция исключающее или и вывод в 8 сс\n", numa ^ numb);
 	return 0;
 }
