@@ -7,18 +7,6 @@ int main()
 	scanf("%d", &num);
 	arg = (-3 < num) ? (num < 6) ? num : num - num: num - num;
 	printf("%d\n", arg);
-
-	if (num >= 16) {
-		printf("false");
-		for (int i = 0; i < 5; i++) {
-			if (i == 4) {
-				num = num % 2;
-			}
-			else {
-				num = num / 2;
-			}
-		}
-	}
-	printf("%d", num);
+	printf("%d", (num >> 4) % 2); 
 	return 0;
 }
