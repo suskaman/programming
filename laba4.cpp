@@ -7,6 +7,6 @@ int main()
 	scanf("%d", &num);
 	arg = (-3 < num) ? (num < 6) ? num : num - num: num - num;
 	printf("%d\n", arg);
-	printf("%d", (num >> 4) % 2); 
+	printf("%d", (num >> 5) % 2); 
 	return 0;
 }
