@@ -1,13 +1,12 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main()
-{
-	int num;
-	char str[101] = "";
-	scanf("%d\n", &num);
-	scanf("%[^\n]s", str);
-	printf("%d\n", num);
-	printf("%s", str);
+int main(){
+	int arr[9] = {99, 88, 77, 66, 55, 44, 33, 22, 11};
+	printf("myarray:\n");
+	for (int i = 0; i < 9; i++) {
+		printf("%d", arr[i]);
+		printf(" ");
+	}
 	return 0;
 }
