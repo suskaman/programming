@@ -14,7 +14,8 @@ int main() {
 	printf("\n");
 	
 	char* temp = (char*)malloc(n*sizeof(int));
-
+	char* arrtemp = (char*)realloc(temp,5);
+	
 	for (int i = 0; i < n; i++) {
 		temp[i] = ell[i];
 	}
