@@ -3,7 +3,7 @@
 #include <malloc.h>
 
 int main() {
-	char arr[] = "WORK";
+	char arr[] = {'W','O','R','K'};
 	char* ell;
 	ell = arr;
 	int n = sizeof(arr);
