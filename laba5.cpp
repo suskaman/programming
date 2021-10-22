@@ -25,6 +25,10 @@ int main(){
 			printf("%d", ans[x][y]);
 			printf(" ");
 		}
+		for (int y = 0; y < 2; y++) {
+			printf("%d", ans[y][x]);
+			printf(" ");
+		}
 		printf("\n");
 	}
 	return 0;
