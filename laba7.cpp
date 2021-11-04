@@ -1,4 +1,4 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<math.h>
 enum music
@@ -49,8 +49,5 @@ int main() {
 	printf("%d\n", t.b.DSL);
 	printf("%d\n", t.b.PPP);
 	printf("%d\n", t.b.Link);
-	return 0;
-
-	
 	return 0;
 }
