@@ -8,7 +8,7 @@ int main() {
 	char str_2[90];	
 	char symbol;
 	scanf(" %[^\n]s\n", str);
-    scanf(" %[^\n]s\n", str_2);
+	scanf(" %[^\n]s\n", str_2);
 
 	strcpy(copys, str);
 
