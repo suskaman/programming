@@ -55,23 +55,23 @@ void f(char* str) {
 
 int main() {
     setlocale(LC_ALL, "Rus");
-    //задание 1
+    //Р·Р°РґР°РЅРёРµ 1
     int ans = 0, num1, num2;
-    printf("Введите первое число: ");
+    printf("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ: ");
     scanf(" %d", &num1);
-    printf("Введите второе число: ");
+    printf("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ: ");
     scanf(" %d", &num2);
 
     int m = NOD(num1, num2, ans);
-    printf("НОД: %d\n", m);
+    printf("РќРћР”: %d\n", m);
 
     int n = NOK(num1, num2, ans);
-    printf("НОК: %d\n", n);
+    printf("РќРћРљ: %d\n", n);
     printf("-----------\n");
 
-    //задание 5
+    //Р·Р°РґР°РЅРёРµ 5
     char str[100];
     scanf(" %[^\n]s", &str);
     f(str);
-	return 0;
+    return 0;
 }
