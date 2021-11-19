@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<locale.h>
+#include<string.h>
 
 int NOD(int num1, int num2, int ans) {
     int num;
@@ -29,28 +30,17 @@ int NOK(int num1, int num2, int ans) {
     return ans;
 }
 
-void f(char* str) {
-    int i, k;
-    i = 0;
-    k = 1;
-    while (str[i]) {
-        if (str[i] == ' ') {
-            if ((str[i - 1] == '(') or (str[i - 1] == '"') or (str[i - 1] == ':')) {
-                k = 0;
-            }
-            else {
-                k = 1;
-            }
-        }
-        else {
-            if (k && i) {
-                printf(" ");
-            }
-            printf("%c", str[i]);
-            k = 0;
-        }
-        i++;
+void d(char* str, int j)
+{
+    int i;
+    if ((str[j] == ' ') and (str[j + 1]) == ' ')
+        d(str, j + 1);
+    for (i = j; i < strlen(str) - 1; i++)
+    {
+        str[i] = str[i + 1];
     }
+    str[i] = 0;
+
 }
 
 int main() {
@@ -72,6 +62,12 @@ int main() {
     //задание 5
     char str[100];
     scanf(" %[^\n]s", &str);
-    f(str);
+
+    for (int i = 0; i < strlen(str); i++)
+    {
+        if ((str[i] == ' ') and (str[i + 1] == ' '))
+            d(str, i + 1);
+    }
+    printf("%s\n", str);
     return 0;
 }
