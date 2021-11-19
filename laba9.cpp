@@ -19,11 +19,11 @@ int main() {
 
     }
 
-    printf("\n кол-во цифр = %d", Number);
-    printf("\n кол-во прописные = %d", High);
-    printf("\n кол-во строчные = %d", Under);
-    printf("---------------");
-	
+    printf("кол-во цифр = %d\n", Number);
+    printf("кол-во прописные = %d\n", High);
+    printf("кол-во строчные = %d\n", Under);
+    printf("---------------\n");
+
     //задание 5
     int summ, month;
     float now, per;
