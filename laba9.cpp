@@ -5,14 +5,24 @@
 int main() {
     setlocale(LC_ALL, "Rus");
     //задание 1
-	int i = 0;  
-    printf("Введите строку: ");
-    do
-        ++i;
-    while (getchar() != '\n');
-    printf("%d\n", i - 1);
-     
-    printf("-----------\n");
+
+    char str[100] ;
+    int Number = 0, High = 0, Under = 0;
+
+    printf("Введите строку:");
+    scanf("%[^\n]s",&str);
+
+    for (int i = 0; i < sizeof(str) ; i++){
+        if (str[i] >= '0' and str[i] <= '9') { Number++; }
+        else if (str[i] >= 'A' and str[i] <= 'Z') { High++; }
+        else if (str[i] >= 'a' and str[i] <= 'z') { Under++; }
+
+    }
+
+    printf("\n кол-во цифр = %d", Number);
+    printf("\n кол-во прописные = %d", High);
+    printf("\n кол-во строчные = %d", Under);
+
 	
     //задание 5
     int summ, month;
