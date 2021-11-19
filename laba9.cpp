@@ -22,7 +22,7 @@ int main() {
     printf("\n кол-во цифр = %d", Number);
     printf("\n кол-во прописные = %d", High);
     printf("\n кол-во строчные = %d", Under);
-
+    printf("---------------");
 	
     //задание 5
     int summ, month;
