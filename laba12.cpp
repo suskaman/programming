@@ -4,10 +4,13 @@
 
 int main() {
 	FILE* list = fopen("list.txt", "a");
-	char name[100];
-	scanf("%[^\n]s", name);
-	_mkdir(name);
-	fprintf(list, "%s\n", name);
+	int i = 1;
+	while (i > 0) {
+		char name[100];
+		scanf(" %[^\n]s", name);
+		_mkdir(name);
+		fprintf(list, "%s\n", name);
+	}
 	fclose(list);
 	return 0;
 }
